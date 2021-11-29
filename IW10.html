@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   const dzialanie =prompt('Podaj jakie dzialanie chcesz wykonac:');
+   var trojkat;
+   var kwadrat;
+   var prostokat;
+   if(dzialanie=='T'){
+    const  a =prompt('Podaj liczbe a:');
+    const  h= prompt('Podaj wielkosc h:');
+    trojkat=(a*h)/2;
+    document.write('Wybrales trojakt, ',  ' Wynik to:'+trojkat)
+   }
+   else if(dzialanie=='K'){
+    const  a =prompt('Podaj liczbe a:');
+       kwadrat=a*a;
+       document.write('Wybrales kwadrat ',  ' Wynik to:' +kwadrat)
+   }
+   else if(dzialanie=='P'){
+    const  a =prompt('Podaj liczbe a:');
+    const  b =prompt('Podaj liczbe b:');
+       prostokat=a*b;
+       document.write('Wybrales prostokat ',  ' Wynik to:' +prostokat)
+   }
+    </script>
+</body>
+</html>
