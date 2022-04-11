@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+        background-color: black;
+        color: white;
+        padding: 20 px;
+        }
+        .zmiana{
+            background-color: orange;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+<p class="akapit">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum est vel magna pulvinar mattis. Aenean commodo libero nunc, eu consequat dolor
+    facilisis et. Quisque vehicula dui vel tempus laoreet. Donec viverra euismod felis id ultricies. Sed mollis tortor a nunc feugiat tincidunt. Vivamus nec leo tempor,
+    finibus magna vel, dapibus magna. Duis tristique convallis urna, quis fermentum purus pulvinar ultrices. Fusce nec lectus faucibus, convallis sem at, volutpat 
+    orci. Aliquam congue enim fermentum, lobortis odio sit amet, commodo enim.Nam at lorem dapibus, hendrerit erat a, euismod massa. Suspendisse in auctor
+    urna. Proin varius congue nibh id convallis. Nullam rutrum elementum erat, et sagittis lectus porttitor vitae. Nam sollicitudin velit a erat gravida accumsan. 
+    Phasellus luctus eros convallis tincidunt maximus. Quisque fringilla molestie ante, vel euismod lectus iaculis in.
+</p>
+    <script>
+
+    //pobieramy akapit
+    const akapit = document.querySelector('p.akapit');
+
+    //przypisujemy obsługę zdarzenia najechania kursorem  myszy na akapit
+    akapit.addEventListener('mouseover',  function() {
+        //zmieniamy kolor tła akapitu
+        //akapit.style.backgroundColor = 'green';
+
+        //do akapitu dodajemy klase zmiana
+        akapit.classList.add('zmiana');
+    });
+
+    //przypisujemy obsługę zdarzenia zjechania kursorem myszy na akapit
+    akapit.addEventListener('mouseout', function() {
+        //akapit.style.backgroundColor = 'black';
+
+        //usuwamy klase zmiana z akapitu 
+        akapit.classList.remove('zmiana');
+    });
+
+    //przypisujemy obsluge zdarzenia click
+    akapit.addEventListener('click', function() {
+        akapit.textContent = 'Masno';
+    });
+
+    
+
+    
+    </script>
+</body>
+</html>
